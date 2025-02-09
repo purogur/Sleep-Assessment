@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠評価</title>
+    <link rel="stylesheet" href="./sleep/sleep.css">
+</head>
+<body>
+    <div id="top">
+        <h1>睡眠評価</h1>
+        <input type="button" id="start_btn" class="btn" value="スタート" onclick="start()">
+    </div>
+    <div id="task_1" hidden>
+        <h1>ストループ作業</h1>
+        <div id="color_back">
+            <div id="white_bord">
+                <div id="color_area">
+                    <input type="button" value="始める" id="task_1_start_btn" class="btn" onclick="task_start(1)">
+                </div>
+            </div>
+        </div>
+        
+        <div id="color_btn">
+            <input type="button" id="color_btn_1" class="btn" onclick="task_1_ans(1)">
+            <input type="button" id="color_btn_2" class="btn" onclick="task_1_ans(2)">
+            <input type="button" id="color_btn_3" class="btn" onclick="task_1_ans(3)">
+            <input type="button" id="color_btn_4" class="btn" onclick="task_1_ans(4)">
+        </div>
+    </div>
+    <div id="task_2" hidden>
+        <h1>計算作業</h1>
+        <div id="display_area">
+            <input type="button" value="始める" id="task_2_start_btn" class="btn" onclick="task_start(2)">
+        </div>
+        <input type="number" placeholder="ここに入力" id="input_num" class="num" onchange="task_2_ans()" hidden>
+    </div>
+    <div id="task_3" hidden>
+        <h1>記憶作業</h1>
+        <div id="display_area_3">
+            <input type="button" value="始める" id="task_3_start_btn" class="btn" onclick="task_start(3)">
+        </div>
+        <input type="number" placeholder="ここに入力" id="input_num_3" class="num" onchange="task_3_ans()" hidden>
+    </div>
+    <div id="task_4" hidden>
+        <h1>タップ作業</h1>
+        <div id="tap_area">
+            <input type="button" value="始める" id="task_4_start_btn" class="btn" onclick="task_start(4)">
+        </div>
+        <div id="tap_btn" hidden></div>
+    </div>
+    <div id="task_end" hidden>
+        <h1>結果</h1>
+        <p id="record"></p>
+        <table>
+            <tr>
+                <th class="left">タスク</th>
+                <th>スコア</th>
+            </tr>
+            <tr>
+                <td class="left">ストループ作業</td>
+                <td id="task_1_result"></td>
+            </tr>
+            <tr>
+                <td class="left">計算作業</td>
+                <td id="task_2_result"></td>
+            </tr>
+            <tr>
+                <td class="left">記憶作業</td>
+                <td id="task_3_result"></td>
+            </tr>
+            <tr>
+                <td class="left">タップ作業</td>
+                <td id="task_4_result"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./sleep/sleep.js"></script>
+</body>
+</html>

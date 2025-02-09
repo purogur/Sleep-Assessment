@@ -1,0 +1,100 @@
+body{
+    text-align: center;
+}
+h1{
+    border-bottom: 5px dotted black;
+}
+.btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 5px;
+}
+#task_1_start_btn{
+    position: relative;
+    top: 37.5%;
+}
+#color_back{
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+#white_bord{
+    margin: auto;
+    width: 275px;
+    height: 100px;
+    background-color: white;
+}
+#color_area{
+    text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#color_btn{
+    margin-top: 10px;
+}
+#display_area{
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+}
+#display_area_3{
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 80px;
+}
+.num{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#tap_area{
+    width: 350px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px double black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tap_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+}
+table{
+    width: 350px;
+    margin: auto;
+    border: 1px solid black;
+}
+th,td{
+    padding: 3px;
+    border: 1px solid black;
+}
+.left{
+    width: 140px;
+}
